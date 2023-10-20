@@ -31958,7 +31958,7 @@ header {
 }
 .navbar-stick:not(.navbar-dark) {
   box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.06);
-  background: #FF3600;
+  background: #F15c22;
 }
 button.hamburger {
   cursor: pointer;
