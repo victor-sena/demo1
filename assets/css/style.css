@@ -220,7 +220,7 @@ Author:		elemis
   --bs-link-hover-color: #3f78e0;
   --bs-link-hover-color-rgb: 63, 120, 224;
   --bs-code-color: #60697b;
-  --bs-highlight-bg: #fef1de;
+  --bs-highlight-bg: rgba(241, 92, 34, 0.3);
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #cacaca;
@@ -400,6 +400,13 @@ a {
 a:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
 }
+main a {
+  color: var(--bs-primary);
+}
+main a:hover {
+  color: var(--bs-gray-900);
+  text-decoration: underline;
+}
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
   color: inherit;
@@ -452,7 +459,7 @@ svg {
   vertical-align: middle;
 }
 table {
-  caption-side: bottom;
+  caption-side: top;
   border-collapse: collapse;
 }
 caption {
@@ -5691,7 +5698,6 @@ fieldset:disabled .btn {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
   }
   .navbar-expand-lg .navbar-nav-scroll {
@@ -39587,5 +39593,26 @@ footer.bg-dark.angled.upper-start:before {
 
 /* STYLES */
 .navbar-brand img {
-  width: 170px;
+  width: 150px;
+}
+.border-black-s {
+  border: 1px solid #000;
+}
+.footer-logos img {
+  width: 120px;
+}
+@media (max-width:768px) {
+  .table-container th {
+    display: none;
+  }
+  .table-container td {
+    display: grid;
+    grid-template-columns: 9ch auto;
+  }
+  .table-container td::before {
+    content:attr(data-cell) ": ";
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
 }
