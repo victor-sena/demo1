@@ -28090,6 +28090,7 @@ form.dark-fields .form-control:focus {
   width: 3.5rem;
   height: 3.5rem;
   font-size: calc(1.355rem + 1.26vw);
+  text-decoration: none;
 }
 @media (min-width: 1200px) {
   .btn.btn-circle.btn-play {
